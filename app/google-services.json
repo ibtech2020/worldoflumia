@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "829581272891",
+    "project_id": "wol-counter",
+    "storage_bucket": "wol-counter.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:829581272891:android:cfde3b9e50a73ad2a7791e",
+        "android_client_info": {
+          "package_name": "com.infobooktechnologies.worldoflumia"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "829581272891-1419ktaevodn41dl2fisugss5ek757lp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCmgsfgk2UWsH_sB6LtpBdQpHBQk7cMw54"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "829581272891-1419ktaevodn41dl2fisugss5ek757lp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

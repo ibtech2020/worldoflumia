@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_vertical"
+    android:fitsSystemWindows="true"
+    android:padding="10dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/harringt_normal"
+        android:text="0"
+        android:textSize="60sp"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    <TextView
+        android:id="@+id/score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/arial"
+        android:text="0"
+        android:textSize="140sp"
+        android:textColor="@color/score_color"
+        android:shadowColor="@color/text_shadow"
+        android:shadowDx="1"
+        android:shadowDy="1"
+        android:shadowRadius="2"
+        android:maxLength="3"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/title"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@+id/score">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingRight="30dp"
+            android:orientation="vertical">
+
+            <include
+                android:id="@+id/btn_player1_left_white"
+                android:layout_width="91dp"
+                android:layout_height="71dp"
+                layout="@layout/button_layout"
+                android:layout_margin="10dp"
+                />
+
+            <include
+                android:id="@+id/btn_player1_left_yellow"
+                android:layout_width="91dp"
+                android:layout_height="71dp"
+                layout="@layout/button_layout"
+                android:layout_margin="10dp"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <include
+                android:id="@+id/btn_player1_right_white"
+                android:layout_width="91dp"
+                android:layout_height="71dp"
+                layout="@layout/button_layout"
+                android:layout_margin="10dp"
+                />
+
+            <include
+                android:id="@+id/btn_player1_right_yellow"
+                android:layout_width="91dp"
+                android:layout_height="71dp"
+                layout="@layout/button_layout"
+                android:layout_margin="10dp"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+
+
+
+    <View
+        android:id="@+id/line_bar"
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:background="#000"
+        android:paddingTop="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
